@@ -2,7 +2,6 @@ package org.kpg2.animation;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.geometry.Pos;
 import javafx.util.Duration;
 import org.kpg2.*;
 
