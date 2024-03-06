@@ -26,11 +26,9 @@ public class MazeApp extends Application {
         stage.show();
 
         addPlateToRootPane();
-        scene.setOnKeyPressed(e -> {
-            System.out.println("e vff");
-            MazeAnimation animation = new MazeAnimation(maze, squarePlate);
-            animation.play();
-        });
+
+        MazeAnimation animation = new MazeAnimation(maze, squarePlate);
+        animation.play();
     }
 
     private void addPlateToRootPane() {
