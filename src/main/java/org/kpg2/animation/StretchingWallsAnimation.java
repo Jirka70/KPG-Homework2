@@ -2,6 +2,7 @@ package org.kpg2.animation;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.geometry.Pos;
 import javafx.util.Duration;
 import org.kpg2.*;
 
@@ -28,8 +29,9 @@ public class StretchingWallsAnimation {
     }
 
     private void solveMaze() {
-        MazeSolvingAnimation solvingAnimation = new MazeSolvingAnimation(maze,squarePlate,new Position(1,1),
-                new Position(maze.getCols()-2, maze.getRows()-2));
+        Position start = new Position(1, 1);
+        Position end = new Position(maze.getCols() - 2, maze.getRows() - 2);
+        MazeSolvingAnimation solvingAnimation = new MazeSolvingAnimation(maze, squarePlate, start, end);
         solvingAnimation.play();
     }
 
